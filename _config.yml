@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Bin's Bytes bites"
+title                    : "Bin's Byte Bites"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "이승빈(Sungbin Lee)"
+subtitle                 : "Dev diary" # site tagline that appears below site title in masthead
+name                     : "Sungbin Lee"
 description              : "My personal blog"
 url                      : "https://sungbinlee.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -114,7 +114,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:isungbin99@gmail.com"
     - label: "Website"
-      icon: "fas fa-fw fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/sungbinlee"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
