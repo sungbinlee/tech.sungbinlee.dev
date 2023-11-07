@@ -113,7 +113,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:isungbin99@gmail.com"
-    - label: "Website"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sungbinlee"
     - label: "Twitter"
