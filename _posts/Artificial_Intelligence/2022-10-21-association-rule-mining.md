@@ -99,7 +99,6 @@ store_df.head()
 
 ```
 
-<!DOCTYPE html>
   <div id="df-249d1b51-b6e0-43d0-abe0-0595fa22166a">
     <div class="colab-df-container">
       <div>
@@ -107,11 +106,9 @@ store_df.head()
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
     .dataframe thead th {
         text-align: right;
     }
@@ -309,7 +306,7 @@ store_df.head()
       fill: #FFFFFF;
     }
   </style>
-      <script>
+  <script>
         const buttonEl =
           document.querySelector('#df-249d1b51-b6e0-43d0-abe0-0595fa22166a button.colab-df-convert');
         buttonEl.style.display =
@@ -333,8 +330,8 @@ store_df.head()
           element.appendChild(docLink);
         }
       </script>
-    </div>
   </div>
+</div>
 
 
 Generate frequent item set
@@ -358,7 +355,7 @@ te_df = pd.DataFrame.sparse.from_spmatrix(te_ary, columns=te.columns_)
 te_df.head()
 ```
 
-```{=html}
+
 
   <div id="df-4eb9d259-8865-428b-b2df-bc82dccd2de2">
     <div class="colab-df-container">
@@ -367,11 +364,9 @@ te_df.head()
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
     .dataframe thead th {
         text-align: right;
     }
@@ -576,8 +571,7 @@ te_df.head()
       fill: #FFFFFF;
     }
   </style>
-
-      <script>
+  <script>
         const buttonEl =
           document.querySelector('#df-4eb9d259-8865-428b-b2df-bc82dccd2de2 button.colab-df-convert');
         buttonEl.style.display =
@@ -601,10 +595,10 @@ te_df.head()
           element.appendChild(docLink);
         }
       </script>
-    </div>
+  </div>
   </div>
   
-```
+
 
 The minimum support was 0.005 and the maximum number of item sets was
 set to three.
@@ -618,15 +612,12 @@ frequent_itemset = apriori(te_df,
 frequent_itemset['length'] = frequent_itemset['itemsets'].map(lambda x: len(x))
 frequent_itemset.sort_values('support',ascending=False,inplace=True)
 ```
-:::
 
-::: {.cell .code colab="{\"base_uri\":\"https://localhost:8080/\",\"height\":423}" id="n_DRDD6M-oBv" outputId="2927a65d-ede4-42a2-cefc-72dd1b4bae18"}
+
 ``` python
 frequent_itemset
 ```
 
-::: {.output .execute_result execution_count="10"}
-```{=html}
 
   <div id="df-e7948339-6243-4ad6-b295-ecdba9c81d92">
     <div class="colab-df-container">
@@ -635,11 +626,9 @@ frequent_itemset
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
     .dataframe thead th {
         text-align: right;
     }
@@ -772,8 +761,7 @@ frequent_itemset
       fill: #FFFFFF;
     }
   </style>
-
-      <script>
+  <script>
         const buttonEl =
           document.querySelector('#df-e7948339-6243-4ad6-b295-ecdba9c81d92 button.colab-df-convert');
         buttonEl.style.display =
@@ -797,20 +785,16 @@ frequent_itemset
           element.appendChild(docLink);
         }
       </script>
-    </div>
   </div>
-  
-```
-:::
-:::
+  </div>
 
-::: {.cell .markdown id="WPsVr2PfA7US"}
+
+
 The code below is the code that extracts the association rule. Only
 association rules with a confidence level of 0.005 or higher are
 extracted.
-:::
 
-::: {.cell .code id="M-RWqCtr-ulw"}
+
 ``` python
 association_rules_df = association_rules(frequent_itemset,
                                          metric='confidence',
@@ -842,14 +826,11 @@ association_rules_df['all-confidence'] = all_confidences
 association_rules_df['collective strength'] = collective_strengths
 association_rules_df['cosine similarity'] = cosine_similarities
 ```
-:::
 
-::: {.cell .code colab="{\"base_uri\":\"https://localhost:8080/\",\"height\":354}" id="64CIlLE--wuF" outputId="ed6aa6b5-c4bc-4967-8daa-f60504dac914"}
 ``` python
 association_rules_df.head()
 ```
 
-```{=html}
   <div id="df-4facfdc5-a5bc-43a5-9802-45f464566fac">
     <div class="colab-df-container">
       <div>
@@ -857,11 +838,9 @@ association_rules_df.head()
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
     .dataframe thead th {
         text-align: right;
     }
@@ -1011,8 +990,7 @@ association_rules_df.head()
       fill: #FFFFFF;
     }
   </style>
-
-      <script>
+  <script>
         const buttonEl =
           document.querySelector('#df-4facfdc5-a5bc-43a5-9802-45f464566fac button.colab-df-convert');
         buttonEl.style.display =
@@ -1036,11 +1014,9 @@ association_rules_df.head()
           element.appendChild(docLink);
         }
       </script>
-    </div>
+  </div>
   </div>
   
-```
-
 
 ### Results
 
