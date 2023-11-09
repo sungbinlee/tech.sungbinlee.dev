@@ -11,9 +11,6 @@ toc_sticky: true
 toc_label: "How to detect fake news?"
 toc_icon: "news"
 ---
-
-# How to detect fake news?
-
 ## Intoduction
 Recently, “fake news” has been attracting attention from all over the world, regardless of field. According to BuzzFeed, 17 of the top 20 fake news related to the US presidential election were falsified, and Facebook's response rate to fake news outperformed mainstream media organization's Facebook response to real news. These fake news are being mass-produced for political and economic purposes, and as a result, individuals, companies, and countries are also paying a huge social cost. While the existence of fake news is not new, it has recently received a lot of attention due to the sheer volume of misinformation surrounding COVID-19. Through this study, I will acquire basic knowledge in this field and at the end create a machine learning model using Python and NLP to successfully detect fake news.
 
