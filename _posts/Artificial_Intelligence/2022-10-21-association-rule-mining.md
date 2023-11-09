@@ -3,8 +3,8 @@ title: "Association Rule Mining"
 categories:
   - Artificial Intelligence
 tags:
-  - DataMining
-  - MachineLearning
+  - Data Mining
+  - Machine Learning
   - Data Analysis
 toc: true
 toc_sticky: true
