@@ -8,63 +8,40 @@ tags:
   - Data Analysis
 toc: true
 toc_sticky: true
-toc_label: "How to detect fake news?"
+toc_label: "Association Rule Mining"
 toc_icon: "news"
 ---
 
 
 ## What is Association Rule Mining?
-Association rule mining is a rule-based machine-learning method for
-finding interesting relationships between items that were not previously
-found in large databases. By using association rule analysis, it is
-possible to know which products are additionally purchased by customers
-who have purchased a specific product. Through this, it is possible to
-know what efficient product display is and which products should be
-bundled, and through this, a marketing strategy can be established.
+Association rule mining is a rule-based machine-learning method for finding interesting relationships between items that were not previously found in large databases. By using association rule analysis, it is possible to know which products are additionally purchased by customers who have purchased a specific product. Through this, it is possible to know what efficient product display is and which products should be bundled, and through this, a marketing strategy can be established.
 
 ## How to analyze association rules
 
-In this project, I will use the Apriori algorithm, which is a
-representative method for finding association rules with minimum support
-and minimum confidence.
+In this project, I will use the Apriori algorithm, which is a representative method for finding association rules with minimum support and minimum confidence.
 
 The Apriori algorithm consists of two steps.
 
 1.  Create a frequent item set
 2.  Create association rule
 
-A Frequent Item Set refers to a set of items with a specific number of
-occurrences or more for each item.
+A Frequent Item Set refers to a set of items with a specific number of occurrences or more for each item.
 
-When generating association rules, all subsets except the empty set of
-Frequent Item Sets are considered, and among them, association rules
-exceeding the minimum confidence are found.
+When generating association rules, all subsets except the empty set of Frequent Item Sets are considered, and among them, association rules exceeding the minimum confidence are found.
 
 
 ## Considerations
 
 3.1 Selection of useful association rules
 
-Not all association rules found from association rule analysis will be
-useful. This is because there are useful rules, rules that are too
-obvious, and rules that are difficult to relate to.
+Not all association rules found from association rule analysis will be useful. This is because there are useful rules, rules that are too obvious, and rules that are difficult to relate to.
 
-For example, the rule \"men who go to the supermarket on Saturdays tend
-to buy beer with their baby diapers\" is useful information because it
-can be used directly in a marketing strategy. On the other hand, the
-information that \"customers who buy iPhones tend to buy iPhones\" is
-not a worthwhile rule because it is somewhat obvious. Lastly, it will be
-difficult to find a correlation with the rule, \"A lot of fans are sold
-in places that sell groceries.\" In conclusion, it is up to the analyst
-to decide which rule is useful among the rules obtained through the
-analysis of the association rules.
+For example, the rule \"men who go to the supermarket on Saturdays tend to buy beer with their baby diapers\" is useful information because it can be used directly in a marketing strategy. On the other hand, the information that \"customers who buy iPhones tend to buy iPhones\" is not a worthwhile rule because it is somewhat obvious. Lastly, it will be difficult to find a correlation with the rule, \"A lot of fans are sold in places that sell groceries.\" In conclusion, it is up to the analyst to decide which rule is useful among the rules obtained through the analysis of the association rules.
 
 
 3.2 calculation problem
 
-As the number of items increases, the computational amount increases
-exponentially, and it takes an enormous amount of time to find
-association rules.
+As the number of items increases, the computational amount increases exponentially, and it takes an enormous amount of time to find association rules.
 
 ## Code 
 

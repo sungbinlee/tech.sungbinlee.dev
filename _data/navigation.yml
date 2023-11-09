@@ -14,3 +14,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+sidebar-category:
+  - title: "💻 Computer Science"
+    children:
+      - title: "Artificial Intelligence"
+        url: "/artificial-intelligence"
+        category: "Artificial Intelligence"
+      - title: "Python"
+        url:  "/python"
+        category: "Python"
+  - title: "👔 LIFE"
+    children:
+      - title: "Daily JAM"
+        url: "/jam"
+      - title: "잡담"
+        url:  "/life"
