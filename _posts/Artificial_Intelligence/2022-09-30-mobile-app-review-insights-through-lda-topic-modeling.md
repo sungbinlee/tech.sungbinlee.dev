@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "Mobile App Review Insights"
-toc_icon: "think"
+toc_icon: "book"
 ---
 
 ## Abstract
@@ -85,7 +85,6 @@ from collections import Counter
 ``` python
 dataset_raw = pd.read_excel('/content/gdrive/MyDrive/NLP-final-project/dataset_raw.xlsx')
 dataset_raw.head()
-
 ```
 
 <div id="df-9fa29d9c-50d5-47f5-bf6e-ecfe26e017a8">
@@ -761,7 +760,9 @@ def select_review(review_removed_stopword):
 review_prep_pos = select_review(review_removed_stopword_pos)
 review_prep_neg = select_review(review_removed_stopword_neg)
 ```
+
 10. Check the preprocessing result
+
 ``` python
 review_num_pos = len(review_prep_pos)
 review_num_neg = len(review_prep_neg)
@@ -1152,11 +1153,15 @@ LDA topic modeling provides information on which keywords are composed of each t
 #### 1. Relevance
 
 Relevance() can be adjusted through the sliding bar on the upper right in the figure below. Relevance is a hyperparameter that balances the frequency of occurrence of a word in a topic with the frequency of its occurrence in the entire document. That is, when there is a word with a high frequency of appearance in a specific topic, whether the word has a high frequency of appearance because it is a keyword that distinguishes the topic from other topics, or simply because it is a word widely used in various document data. It is a parameter that helps to clearly distinguish whether or not was high.
+
 ![image](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/05893edb-3b0e-4df7-9207-44b24ccfbd72)
 > Figure 1. Review topic modeling visualization results of positive evaluation.
+
 The Relevance value is a value between 0 and 1, and the closer it is to 0, the less the number of occurrences in the entire document is, but the focus is on whether the topic is a word that can differentiate it from other topics. On the other hand, the closer the Relevance value is to 1, the more likely it is to be a keyword that appears frequently in the entire document data rather than a keyword constituting a specific topic. For example, in healthcare app review data, the word 'exercise' is very likely to appear in multiple reviews. Therefore, it is difficult to clearly distinguish one topic from another by simply using the word 'exercise'. In these cases, setting the Relevance close to zero can penalize the importance of the word 'exercise', which appears in many reviews. This shows that the word 'exercise' is a widely used word throughout the document, rather than only appearing a lot in that topic. According to a study by [Sievert & Shirley (2014)](https://colab.research.google.com/drive/1JRUe2PGIj7VTBozJEr3fo1rGiPflmCtp#scrollTo=XyABH526UrUu:~:text=The%20Relevance%20value,domain%2C%20dataset%2C%20etc.), a Relevance value of 0.6 is known to be the most effective. However, this value is not always correct. This is because the optimal Relevance value may differ depending on each research domain, dataset, etc.
+
 #### 2. Topics and keywords
 All circles on the left in the figure below are each topic. The distance between circles means how similar topics are to each other. A larger circle means that the topic has more words (=tokens). If you hover your mouse over the circle, the ratio of the words constituting the topic to the total document data is displayed on the right side of the current topic's keywords. It also provides the ratio of the words that the topic constitutes to the words of the entire document data. In this way, by identifying which words are composed of each topic and at what ratio, the topic of each topic can be inferred, and furthermore, which topic is composed of the entire document data and at what ratio (= importance).
+
 ![image](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/285f018f-58db-45ea-9f88-ee382c9fc279)
 > Figure 2. Review topic modeling visualization results of Negative evaluation
 
@@ -1165,20 +1170,26 @@ Analyze user needs based on the visualization results.
 
 #### 1. Positive review analysis
 First, the results of topic modeling of positive reviews are as follows.
+
 ![image](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/18caa210-c7fd-466c-a2c6-1ba2839bbd06)
 * Exercise action description function
+  
 You can see that the words 'useful', 'accurate', 'easy', 'simple', 'steps', and 'follow' appear frequently in topic 2. It can be interpreted that content that explains the movement of exercise step by step received positive reviews. Therefore, when planning a health care app service, I can consider video-based exercise action lecture content.
 
 * Meal record feature
+  
 In topic 5, words such as 'meal', 'track', 'schedule', and 'plans' appeared frequently. Through this, it can be interpreted that the meal record function, such as taking a picture of the meal and saving it, had a positive effect on controlling the diet. Computer Vision technology allows you to analyze what food you ate and how much you ate through food photos. This technology is expected to provide a positive user experience in terms of convenience by reducing the hassle of having to record dietary information one by one.
 
 * exercise record feature
+  
 In topic 10, words such as 'workouts', 'progress', 'motivated', 'steps', 'track', and 'helps' appeared frequently. This can be interpreted as having a positive effect on providing interest and motivation for exercise by making an exercise plan through exercise log recording and checking exercise quantity through exercise amount measurement. As such, adding an exercise log recording feature to the health caring app service that can help users record the amount of exercise and type of exercises, is expected to help promote regular exercise and use of the app.
 
 #### 2. Negative review analysis
 ![image](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/da112c35-343a-45de-bbf4-67c3262fecf3)
 * Automatic paid subscription complaint
+  
 You can see that words such as 'charged', 'refund', 'subscription', 'trial', 'cancel', and 'free' appear frequently in topic 3. This is a number of complaints caused by the operating method of some healthcare apps provide free services for the first 1 to 3 months and then switch to paid subscription services without the user's additional consent after the trial period. There are a lot of reviews in these service policies, where many users request immediate cancellation of subscription and refund. Therefore, in the healthcare app operation method, it is necessary to switch to providing payment and paid service only when the user is additionally asked for payment before switching to a paid subscription service and agrees to this.
 
 * Exercise tracking accuracy issue
+  
 You can see that the words 'steps', 'track', 'count', 'accurate', 'gps', 'distance', 'mile', 'work', and 'wearable' appear frequently in topic 5. There is a lot of negative feedback related to accuracy issues in exercise tracking, such as step count. For example, the app says that you have taken 10,000 steps, but your smartwatch only counts 5,000 steps. Users may underestimate the reliability of the service as a whole because of the low accuracy of these workout tracking. Therefore, when designing a healthcare service, it is necessary to continuously improve the accuracy of exercise tracking not only in the app but also in the wearable device environment.
