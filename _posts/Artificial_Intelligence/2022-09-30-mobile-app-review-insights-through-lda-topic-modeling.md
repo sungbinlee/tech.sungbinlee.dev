@@ -9,8 +9,8 @@ tags:
   - LDA Topic Modeling
 toc: true
 toc_sticky: true
-toc_label: "How to detect fake news?"
-toc_icon: "phone"
+toc_label: "Mobile App Review Insights"
+toc_icon: "think"
 ---
 
 ## Abstract
