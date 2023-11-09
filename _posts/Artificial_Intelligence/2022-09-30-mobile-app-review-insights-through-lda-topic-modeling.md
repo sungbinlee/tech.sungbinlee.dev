@@ -3,8 +3,8 @@ title: "Mobile App Review Insights through LDA Topic Modeling"
 categories:
   - Artificial Intelligence
 tags:
-  - DataMining
-  - MachineLearning
+  - Data Mining
+  - Machine Learning
   - Data Analysis
   - LDA Topic Modeling
 toc: true
