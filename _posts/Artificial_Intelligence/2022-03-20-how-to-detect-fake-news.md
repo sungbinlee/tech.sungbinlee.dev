@@ -5,7 +5,7 @@ categories:
 tags:
   - TF-IDF
   - NLP
-  - MachineLearning
+  - Machine Learning
 toc: true
 toc_sticky: true
 toc_label: "How to detect fake news?"
