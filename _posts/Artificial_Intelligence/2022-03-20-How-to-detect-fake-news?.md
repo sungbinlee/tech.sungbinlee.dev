@@ -18,25 +18,25 @@ toc_icon: "news"
 Recently, “fake news” has been attracting attention from all over the world, regardless of field. According to BuzzFeed, 17 of the top 20 fake news related to the US presidential election were falsified, and Facebook's response rate to fake news outperformed mainstream media organization's Facebook response to real news. These fake news are being mass-produced for political and economic purposes, and as a result, individuals, companies, and countries are also paying a huge social cost. While the existence of fake news is not new, it has recently received a lot of attention due to the sheer volume of misinformation surrounding COVID-19. Through this study, I will acquire basic knowledge in this field and at the end create a machine learning model using Python and NLP to successfully detect fake news.
 
 ## Review of Related Work
-### NLP 
+### 1. NLP 
 Natural Language Processing (NLP) refers to the work of analyzing the meaning of natural language so that the computer can process it. In recent years, technology for natural language processing documents using machine learning or deep learning covers all fields that traditionally belong to text mining, so its scope has been expanded. (Brownlee, 2019).
 
-### Classification
+### 2. Classification
 Classification is a branch of supervised learning that is used to predict one of several predefined classes for a given input data. As one of the most used fields in machine learning, there are various algorithms and application cases. In implementation, I will be using passive-aggressive classification because it is one of the available incremental learning algorithms and is very easy to implement. Passive-aggressive algorithms are a suite of online learning algorithms for both classification and regression proposed by Crammer et al (2006). The idea is very simple and the performance has proven to be superior to many other alternative methods such as Online Perceptron and MIRA by the authors.
 
-### Fake News Detection
+### 3. Fake News Detection
 Fake news detection research is largely divided into content-based detection research and context-based detection research (Bondielli & Marcelloni, 2019). Content-based detection research has been mainly proposed in a form combined with a machine learning-based classification model, and is a method that uses the linguistic characteristics of the content and the features appearing in the content format. In context-based detection research, there is a method that uses information about the distributor or source of fake news, and a method that uses network characteristics. Fake news detection studies are mostly content-based studies, and specifically, studies using linguistic features. TF-IDF was used the most as a method to extract the linguistic features of fake news, Jung (2019) showed that sentiment analysis and text analysis using syntactic features were combined for the first time to detect fake news. In the case of Wang (2017) a successful fake news detection model was created by applying word2vec to a short fake news dataset.
 
-### Topic Modeling
+### 4. Topic Modeling
 Topic Modeling is one of the application fields of text mining, and it is a representative application technology that is most actively used with tangible results in various fields (Lee & Kim, 2018). Topic modeling is performed by grouping similar sentences based on the frequency of terms included in each document, and then extracting key terms representing each group to suggest a set of topic keywords for the group (Document used here means a broad concept including document, title, summary, body, comment, etc.). The main theoretical backgrounds are the Vector Space Model (Albright, 2016; Salton et al, 1975) and TF-IDF (Weiss et al, 2010). TF–IDF is short for term frequency–inverse document frequency, and is done in such a way that a low value is assigned to a general word that appears frequently in multiple documents, and a high value is assigned to a special word that appears in a specific document. Each document has as many dimensions as the number of terms and is expressed as a vector with TF-IDF as a value. The TF-IDF value is calculated in the following way and is used in various fields (Lee & Kim, 2009).
 
 <img width="377" alt="image" src="https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/d401896d-d0c7-4832-ae57-eb4e7125e93f">
 
-### Word Embedding
+### 5. Word Embedding
 Word embedding is an expression that collectively refers to a method of representing a word as a vector, and is largely divided into a sparse expression and a dense expression. A sparse representation is a traditional vector representation method, such as Bag of word or TF-IDF. Bag of word is a method of evaluating and expressing words only based on appearance frequency without considering the order of words. TF-IDF basically evaluates words based on their frequency. it has the possibility of overfitting because it generates a sparse matrix that expands the dimension by the number of individual terms appearing in the entire data. In addition, there is a limitation in not reflecting the contextual information of words and the direction of meaning between words. On the other hand, word2vec is a representative method corresponding to dense expression, which is a deep learning-based word embedding technique that reconstructs the linguistic context of a word with a dense vector expression (Mikolov et al., 2013). The word prediction method is divided into cbow and skipgram, and there are a plurality of hyperparameters such as the number of windows, the minimum frequency of words, and the number of processes.
 
 ## Implementation
-### Libraries
+### 1. Libraries
 The following libraries should be installed with pip:
 ```python
 pip3 install pandas
@@ -57,7 +57,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 ```
 
-### Dataset
+### 2. Dataset
 Having the right data set is one of the most important components of any data science. For this implementation, the dataset used includes many articles. These articles are classified as "REAL" or "FAKE" through preprocessing. This data will be used as training data so that the model can determine whether an article is providing factual information or fake news. In this case, the following [Kaggle dataset](https://www.kaggle.com/c/fake-news/data) will be used as training data.
 ```python
 # Import dataset
@@ -74,7 +74,7 @@ Screenshot:
 
 <img width="620" alt="image" src="https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/fb3de4fa-d5c3-4e46-bd58-2ae4ee84ba79">
 
-I can see that the csv file contains a data set of 20800 rows and 5 unique features (columns) and I can see that the data set is divided into columns like id, title, author, text and label. What I'm interested in are the labels and text columns. The text column contains the content of the article, while the label column indicates whether the article is true or not. This is premade in binary format using '1's and '0'.
+I can see that the CSV file contains a data set of 20800 rows and 5 unique features (columns) and I can see that the data set is divided into columns like id, title, author, text and label. What I'm interested in are the labels and text columns. The text column contains the content of the article, while the label column indicates whether the article is true or not. This is premade in binary format using '1's and '0'.
 
 In general, this is a perfect way to represent these values, but for convenience, I convert the '1' and '0' to 'REAL' and 'FAKE'.
 ```python
@@ -97,7 +97,7 @@ Now I need to split the data set into two separate sets. 80% of the data will be
 x_train,x_test,y_train,y_test=train_test_split(df['text'].values.astype('str'), labels, test_size=0.2, random_state=7)
 ```
 
-### Building Vectorizer Classifiers
+### 3. Building Vectorizer Classifiers
 Now declare a TfidfVectorizer with stop words from English and allow document frequency up to 0.7. After the vectorizer, transform it on the training set and also transform it on the testing set.
 ```python
 #Initialize a TfidfVectorizer
@@ -179,10 +179,10 @@ Screenshot:
 <img width="466" alt="image" src="https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/daf653af-6a75-45fa-90f8-51202971918e">
 
 I can draw the following conclusions from the confusion matrix:
-The model successfully predicted 2032 positives.
-The model successfully predicted 1988 negatives.
-The model predicted 68 false positives.
-The model predicted 72 false negatives.
+- The model successfully predicted 2032 positives.
+- The model successfully predicted 1988 negatives.
+- The model predicted 68 false positives.
+- The model predicted 72 false negatives.
 
 ## Conclusion
 I implemented a model that detects fake news and it showed an accuracy of 96.61%, but there is a limitation in that because it is based only on trained data and well-organized data. On the other hand, our society is facing difficult situations such as Covid-19, the invasion of Ukraine, and inflation. In these difficult times, it is important to further advance models such as fake news detection to effectively combat misinformation.
