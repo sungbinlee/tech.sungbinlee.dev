@@ -1,7 +1,7 @@
 ---
 title: "Association Rule Mining"
 categories:
-  - Artificial intelligence
+  - Artificial Intelligence
 tags:
   - DataMining
   - MachineLearning

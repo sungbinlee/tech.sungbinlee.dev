@@ -1,7 +1,7 @@
 ---
 title: "How to detect fake news?"
 categories:
-  - Artificial intelligence
+  - Artificial Intelligence
 tags:
   - TF-IDF
   - NLP
