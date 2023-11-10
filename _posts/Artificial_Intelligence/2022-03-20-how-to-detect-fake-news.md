@@ -12,7 +12,7 @@ toc_label: "How to detect fake news?"
 toc_icon: "news"
 ---
 ## Intoduction
-Recently, “fake news” has been attracting attention from all over the world, regardless of field. According to BuzzFeed, 17 of the top 20 fake news related to the US presidential election were falsified, and Facebook's response rate to fake news outperformed mainstream media organization's Facebook response to real news. These fake news are being mass-produced for political and economic purposes, and as a result, individuals, companies, and countries are also paying a huge social cost. While the existence of fake news is not new, it has recently received a lot of attention due to the sheer volume of misinformation surrounding COVID-19. Through this study, I will acquire basic knowledge in this field and at the end create a machine learning model using Python and NLP to successfully detect fake news.
+In recent times, the global spotlight has turned towards the pervasive issue of "fake news" across various domains. BuzzFeed reported that 17 out of the top 20 news items related to the US presidential election were found to be fabricated. Notably, Facebook's response to fake news surpassed its responsiveness to real news, outperforming mainstream media organizations. The alarming proliferation of fake news, driven by political and economic motives, imposes significant social costs on individuals, companies, and nations. Although the phenomenon of fake news is not new, its magnitude has gained unprecedented attention, especially amid the overwhelming misinformation surrounding COVID-19. Through this study, I aim to gain foundational knowledge in this domain and ultimately develop a Python-based machine learning model, leveraging natural language processing (NLP), to effectively identify and combat fake news.
 
 ## Review of Related Work
 ### 1. NLP 
@@ -182,7 +182,7 @@ I can draw the following conclusions from the confusion matrix:
 - The model predicted 72 false negatives.
 
 ## Conclusion
-I implemented a model that detects fake news and it showed an accuracy of 96.61%, but there is a limitation in that because it is based only on trained data and well-organized data. On the other hand, our society is facing difficult situations such as Covid-19, the invasion of Ukraine, and inflation. In these difficult times, it is important to further advance models such as fake news detection to effectively combat misinformation.
+I've developed a fake news detection model with an impressive accuracy of 96.61%. However, a notable limitation lies in its reliance on well-organized and pre-trained data. Given the current challenges society faces, including the complexities of COVID-19, the invasion of Ukraine, and inflation, there is a pressing need to enhance models like mine. This improvement is crucial for effectively countering misinformation in these critical times.
 
 ## References
 
