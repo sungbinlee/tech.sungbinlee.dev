@@ -185,7 +185,7 @@ I can draw the following conclusions from the confusion matrix:
 I've developed a fake news detection model with an impressive accuracy of 96.61%. However, a notable limitation lies in its reliance on well-organized and pre-trained data. Given the current challenges society faces, including the complexities of COVID-19, the invasion of Ukraine, and inflation, there is a pressing need to enhance models like mine. This improvement is crucial for effectively countering misinformation in these critical times.
 
 ## References
-
+```
 Brownlee, J. (2019, August 7). What is natural language processing? Machine Learning Mastery. Retrieved March 20, 2022, from https://machinelearningmastery.com/natural-language-processing/  
 
 Bondielli, A., & Marcelloni, F. (2019). Survey on fake news and rumour detection techniques. information Sciences, Vol. 497, pp. 38-55
@@ -207,4 +207,4 @@ Weiss, S. M., Indurkhya, N., & Zhang, T. (2010). Fundamentals of Predictive Text
 Lee, S. and Kim, H. J. (2009) Keyword Extraction from News Corpus using Modified TFIDF. The Journal of Society for e-Business Studies, Vol. 14, No. 4, pp. 59-73.
 
 Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S., & Dean, J. (2013). Distributed representations of words and phrases and their compositionality. In Advances in neural information processing systems, pp. 3111-3119.
-
+```
