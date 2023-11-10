@@ -14,7 +14,7 @@ toc_icon: "news"
 
 
 ## What is Association Rule Mining?
-Association rule mining is a rule-based machine-learning method for finding interesting relationships between items that were not previously found in large databases. By using association rule analysis, it is possible to know which products are additionally purchased by customers who have purchased a specific product. Through this, it is possible to know what efficient product display is and which products should be bundled, and through this, a marketing strategy can be established.
+Association rule mining is a rule-based machine-learning technique designed to discover meaningful relationships between items within extensive databases. This method enables the identification of products that are frequently purchased together with a specific item. By conducting association rule analysis, businesses can optimize product displays, determine effective product bundling strategies, and formulate targeted marketing approaches based on customer purchasing patterns.
 
 ## How to analyze association rules
 
