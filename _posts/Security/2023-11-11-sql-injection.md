@@ -1,16 +1,16 @@
 ---
 title: "SQL Injection 문제와 방어 전략"
 categories:
-  - security
+  - Security
 tags:
-  - Data Mining
-  - Machine Learning
-  - Data Analysis
-  - LDA Topic Modeling
+  - Security
+  - Backend
+  - Database
+  - System Protection
 toc: true
 toc_sticky: true
-toc_label: "Mobile App Review Insights"
-toc_icon: "book"
+toc_label: "SQL Injection 문제와 방어 전략"
+toc_icon: "magnifier"
 ---
 
 ## 서론
