@@ -24,6 +24,9 @@ sidebar-category:
       - title: "Python"
         url:  "/python"
         category: "Python"
+      - title: "Security"
+        url:  "/security"
+        category: "Security"
   - title: "👔 LIFE"
     children:
       - title: "Daily JAM"
