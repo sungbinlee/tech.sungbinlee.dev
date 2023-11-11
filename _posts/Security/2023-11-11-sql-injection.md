@@ -1,12 +1,12 @@
 ---
 title: "SQL Injection 문제와 방어 전략"
 categories:
-  - Security
+  - Security
 tags:
   - Security
   - Backend
   - Database
-  - System Protection
+  - System Protection
 toc: true
 toc_sticky: true
 toc_label: "SQL Injection 문제와 방어 전략"
