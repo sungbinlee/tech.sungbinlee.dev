@@ -4,7 +4,9 @@ categories:
   - Security
 tags:
   - Security
+  - Web Dev
   - Backend
+  - Frontend
   - Database
   - System Protection
 toc: true
