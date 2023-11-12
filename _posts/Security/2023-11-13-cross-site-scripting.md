@@ -11,8 +11,8 @@ tags:
   - System Protection
 toc: true
 toc_sticky: true
-toc_label: "SQL Injection 문제와 방어 전략"
-toc_icon: "magnifier"
+toc_label: "XSS 공격 방어 전략"
+toc_icon: "book"
 ---
 
 ## 서론
