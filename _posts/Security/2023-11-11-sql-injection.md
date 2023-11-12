@@ -83,6 +83,7 @@ BEGIN
   -- 타입 검증 및 데이터베이스 등록 로직
 END;
 ```
+
 ### 3. Parameterized Query 사용
 
 - 쿼리에 파라미터를 사용하여 사용자 입력을 안전하게 처리하고 SQL Injection을 방지합니다.
@@ -91,6 +92,7 @@ END;
 # 파이썬 SQLite 라이브러리를 사용한 Parameterized Query 예시
 cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?", (username, password))
 ```
+
 ### 4. SQL Injection 코드 패턴 필터링
 
 - 자주 사용되는 SQL Injection 코드 패턴을 미리 걸러내는 방법을 통해 시스템을 더욱 안전하게 운영할 수 있습니다.
