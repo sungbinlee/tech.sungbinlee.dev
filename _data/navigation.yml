@@ -30,6 +30,9 @@ sidebar-category:
       - title: "Security"
         url:  "/security"
         category: "Security"
+      - title: "Review"
+        url: "/review"
+        category: "Review"
   - title: "👔 LIFE"
     children:
       - title: "Daily JAM"
