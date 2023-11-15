@@ -11,6 +11,7 @@ toc_sticky: true
 toc_label: "1일 1로그 100일 완성 IT 지식"
 toc_icon: "book"
 ---
+![image](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/0c3d8bd1-da8f-4ac3-9b39-0439489d294a)
 
 ## 개요
 1일 1로그 100일 완성 IT 지식(Understanding the Digital World) 완독 후기입니다. 책은 9월에 읽었지만 지금 리뷰를 작성하네요. 서점에서 베스트 셀러로 팔리는 책으로 전공서적 구매하면서 같이 구입했습니다. 저는 컴퓨터 과학을 전공했지만 취업을 앞두고 있는 상황에서 이 책이 도움이 될지 궁금해서 읽어보았습니다!
