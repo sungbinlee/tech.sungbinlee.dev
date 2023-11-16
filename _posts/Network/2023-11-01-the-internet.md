@@ -3,8 +3,8 @@ title: "인터넷은 어떻게 동작하는가?"
 categories:
   - Network
 tags:
-  - Python
-  - Basic
+  - Internet
+  - Networking
 toc: true
 toc_sticky: true
 toc_label: "인터넷은 어떻게 동작하는가?"
