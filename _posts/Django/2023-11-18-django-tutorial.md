@@ -31,6 +31,7 @@ Django는 파이썬으로 작성된 무료 오픈 소스 웹 프레임워크입�
 * 2번과 3번을 통합하는 것을 `CI/CD` 구축이라고 합니다. 그래서 push를 하면 자동으로 테스트 서버에 배포되고, 문제 없으면 실 서버에 배포 될 수 있도록 하는 편입니다.
 
 ## 4. Django tutorial
+![image](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/54191196-6f89-4112-8318-e4b0adb36be1)
 
 1. 어떤 파일이 수정되어야 하는지 아래 이미지를 참고하세요.
 2. url을 설계합니다.
