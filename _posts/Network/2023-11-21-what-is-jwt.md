@@ -1,18 +1,14 @@
 ---
-title: "JWT vs 세션"
+title: "인터넷은 어떻게 동작하는가?"
 categories:
   - Network
 tags:
   - Internet
   - Networking
-  - Token
-  - JWT
-  - Security
-  - Authentication
 toc: true
 toc_sticky: true
-toc_label: "JWT 란?"
-toc_icon: "book"
+toc_label: "인터넷은 어떻게 동작하는가?"
+toc_icon: "internet"
 ---
 
 ## JWT
