@@ -9,7 +9,7 @@ tags:
   - 
 toc: true
 toc_sticky: true
-toc_label: "Django 튜토리얼"
+toc_label: "URL Dispatcher와 정규표현식"
 toc_icon: "book"
 ---
 
@@ -20,7 +20,7 @@ Django에서 URL Dispatcher는 URL 패턴을 뷰(View)에 매핑하는 기능을
 - **패턴 트리 구조:** `urlpatterns`를 사용하여 URL을 계층적으로 정의하며, 트리 구조처럼 설정합니다.
 - **순차적 매칭:** 요청이 들어오면 Django는 `urlpatterns` 목록에서 위에서 아래로 URL 패턴과 일치하는 것을 찾을 때까지 매칭합니다.
 - **Path()와 Re_path() 사용:** Django에서는 URL 패턴에 대해 `path()`와 `re_path()`를 구분합니다.
-  - `path()`: 기본 경로 변환기를 사용하여 정규 표현식을 단순화합니다.
+  - `path()`: 기본 Converter를 사용하여 정규 표현식을 단순화합니다.
   - `re_path()`: 복잡한 패턴 매칭을 위해 정규 표현식을 사용합니다.
 
 ### Django 2.x에서 Path()와 Re_path() 예시
@@ -28,10 +28,10 @@ Django에서 URL Dispatcher는 URL 패턴을 뷰(View)에 매핑하는 기능을
 from django.urls import path, re_path
 
 urlpatterns = [
-    # 기본 변환기를 사용한 경로
+    # 기본 Converter를 사용한 경로
     path('articles/<int:year>/', views.year_archive),
 
-    # 같은 패턴을 정규 표현식을 사용하여 설정
+    # 같은 패턴을 정규 표현식을 사용하여 좀더 타이트하게 설정
     re_path(r'^articles/(?P<year>[0-9]{4})/$', views.year_archive),
 ]
 ```
