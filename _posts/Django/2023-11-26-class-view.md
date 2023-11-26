@@ -16,7 +16,7 @@ toc_icon: "book"
 ## 장고의 호출 가능한 객체
 장고에서 뷰는 사용자 요청에 어떻게 응답할지를 결정합니다. 함수 기반 뷰 (FBV)와 클래스 기반 뷰 (CBV)는 두 가지 주요 패러다임으로 뷰를 구현하는 방식입니다.
 
-## 함수 기반 뷰 (FBV)
+### 함수 기반 뷰 (FBV)
 
 FBV는 장고에서 뷰를 구현하는 기본적인 방식입니다. 함수를 사용하여 만들며, 공통 기능들은 종종 장식자 문법을 활용합니다:
 ```python
@@ -36,15 +36,10 @@ class MyView(APIView):
     get(self, request):
         return Response({"message": "Hello world!"})
 ```
-물론이죠, 여기에 내용을 추가해 보겠습니다!
 
----
-
-## Class Based View (CBV)
+### CBV 파헤쳐보기
 
 CBV는 뷰 함수를 생성하는 클래스입니다. `as_view()` 클래스 함수를 통해 뷰 함수를 생성하고, 상속을 활용하여 여러 기능을 믹스인할 수 있습니다. 장고의 기본 CBV 패키지는 `django.views.generics`에 있습니다. 이외에도 `django-braces`와 같은 써드파티 CBV 패키지도 있습니다.
-
-### Function Based View (FBV)
 
 #### 함수를 통한 동일한 View 함수 생성 예시
 ```python
