@@ -80,10 +80,6 @@ def safe_methods_view(request):
 
 위의 예시들은 HTTP 요청 메소드를 제한하거나 안전한 메소드만을 허용하는 Decorators를 보여줍니다. 요청이 허용되지 않는 경우 적절한 응답이 반환됩니다.
 
-물론, 아래에 블로그 글을 작성한 것과 비슷한 내용을 Markdown 형식으로 제공해 드리겠습니다:
-
----
-
 ## 클래스 Decorator와 LoginRequiredMixin 활용하기
 
 클래스 Decorators는 클래스 전체를 변경하거나 확장하는 데 사용되며, 장고(Django)에서 주로 뷰(View)를 조작하거나 확장하는 데 활용됩니다. 특히 `@method_decorator`를 사용하여 클래스의 메소드를 데코레이팅하거나, 믹스인(mixin) 패턴을 통해 기존 클래스에 기능을 추가하는 등의 방법으로 사용됩니다.
