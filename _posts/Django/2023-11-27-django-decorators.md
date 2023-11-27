@@ -8,7 +8,7 @@ tags:
   - Tutorial
 toc: true
 toc_sticky: true
-toc_label: "Django 튜토리얼"
+toc_label: "Django Decorators"
 toc_icon: "book"
 ---
 
@@ -115,5 +115,3 @@ class ProtectedView(LoginRequiredMixin, View):
 ```
 
 `LoginRequiredMixin`을 사용하는 경우, 해당 클래스를 상속함으로써 로그인이 필요한 뷰를 간단히 구현할 수 있습니다. 이 방식은 클래스 데코레이터보다 더 간편하며, 특정 뷰에 로그인이 필요한 경우에 적합합니다.
-
-클래스 데코레이터와 `LoginRequiredMixin`은 장고에서 뷰 보호 및 권한 관리를 위한 강력한 기능들로, 코드를 간결하게 작성하고 중복을 피하는 데 큰 도움을 줍니다.
