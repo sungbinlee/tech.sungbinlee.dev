@@ -5,16 +5,17 @@ categories:
 tags:
   - Basic
   - Python
-  - Tutorial
+  - Backend
+  - Decorator
 toc: true
 toc_sticky: true
 toc_label: "Django Decorators"
 toc_icon: "book"
 ---
 
-장고(Django)에서의 Decorators(장식자)는 함수를 감싸는 방식으로, 특정 기능이나 행동을 추가하거나 조정하는 데 사용됩니다. 이들은 코드 재사용과 유지보수를 쉽게 만들어주며, 장고에서 제공하는 여러 가지 내장 Decorators를 사용하여 웹 애플리케이션의 보안, HTTP 메소드 제한, 권한 관리 등을 손쉽게 다룰 수 있습니다.
+장고(Django)에서의 Decorator(장식자)는 함수를 감싸는 방식으로, 특정 기능이나 행동을 추가하거나 조정하는 데 사용됩니다. 이들은 코드 재사용과 유지보수를 쉽게 만들어주며, 장고에서 제공하는 여러 가지 내장 Decorators를 사용하여 웹 애플리케이션의 보안, HTTP 메소드 제한, 권한 관리 등을 손쉽게 다룰 수 있습니다.
 
-## 기본적인 Decorators 사용 예시
+## 기본적인 Decorator 사용 예시
 
 ### `login_required`
 
@@ -78,11 +79,11 @@ def safe_methods_view(request):
     return render(request, "myapp/safe_methods.html")
 ```
 
-위의 예시들은 HTTP 요청 메소드를 제한하거나 안전한 메소드만을 허용하는 Decorators를 보여줍니다. 요청이 허용되지 않는 경우 적절한 응답이 반환됩니다.
+위의 예시들은 HTTP 요청 메소드를 제한하거나 안전한 메소드만을 허용하는 Decorator를 보여줍니다. 요청이 허용되지 않는 경우 적절한 응답이 반환됩니다.
 
 ## 클래스 Decorator와 LoginRequiredMixin 활용하기
 
-클래스 Decorators는 클래스 전체를 변경하거나 확장하는 데 사용되며, 장고(Django)에서 주로 뷰(View)를 조작하거나 확장하는 데 활용됩니다. 특히 `@method_decorator`를 사용하여 클래스의 메소드를 데코레이팅하거나, 믹스인(mixin) 패턴을 통해 기존 클래스에 기능을 추가하는 등의 방법으로 사용됩니다.
+클래스 Decorator는 클래스 전체를 변경하거나 확장하는 데 사용되며, 장고(Django)에서 주로 뷰(View)를 조작하거나 확장하는 데 활용됩니다. 특히 `@method_decorator`를 사용하여 클래스의 메소드를 데코레이팅하거나, 믹스인(mixin) 패턴을 통해 기존 클래스에 기능을 추가하는 등의 방법으로 사용됩니다.
 
 ### 클래스 데코레이터를 활용한 뷰(View) 보호하기
 
