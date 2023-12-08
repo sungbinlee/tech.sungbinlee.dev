@@ -37,6 +37,7 @@ toc_icon: "book"
 ## 클래스 정의 비교 예시
 
 - **Form/ModelForm:**
+  
 ```python
 from django import forms
 
@@ -52,6 +53,7 @@ class PostModelForm(forms.ModelForm):
 ```
 
 - **Serializer/ModelSerializer:**
+  
 ```python
 from rest_framework import serializers
 
