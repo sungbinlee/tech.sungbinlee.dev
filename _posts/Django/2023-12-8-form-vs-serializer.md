@@ -17,13 +17,11 @@ toc_icon: "book"
 ## 특징
 ### Form / ModelForm
 - **기능:** HTML 입력 폼으로부터의 입력 유효성 검사.
-- **대부분의 사용처:** 생성/수정 작업에서 주로 활용되며, 주로 장고 어드민에서 사용됨.
-- **사용처:** CreateView/UpdateView CBV를 통한 뷰 처리로 주로 단일 뷰에서 작동함.
+- **사용처:** 생성/수정 작업에서 주로 활용되며, CreateView/UpdateView CBV를 통한 뷰 처리로 주로 단일 뷰에서 작동함.
 
 ### Serializer / ModelSerializer
 - **기능:** 데이터 변환과 직렬화 지원(JSON 형식 등).
 - **사용처:** List/Create 및 특정 레코드의 Retrieve/Edit/Delete 등에 활용됨.
-- **사용처:** APIView를 통한 단일 뷰 처리 및 ViewSet을 통한 두 개의 뷰 및 두 개의 URL 처리에 활용됨.
 
 ## 주된 호출 주체
 
