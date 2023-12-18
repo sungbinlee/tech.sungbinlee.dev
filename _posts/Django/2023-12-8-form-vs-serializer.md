@@ -10,7 +10,7 @@ tags:
   - Backend
 toc: true
 toc_sticky: true
-toc_label: "ORM N+1"
+toc_label: "Form vs Serializer"
 toc_icon: "book"
 ---
 
