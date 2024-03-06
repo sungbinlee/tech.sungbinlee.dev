@@ -1,5 +1,5 @@
 ---
-title: "Binary search"
+title: "Binary search"
 categories:
   - Killing Camp
 tags:
