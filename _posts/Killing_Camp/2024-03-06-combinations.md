@@ -1,5 +1,5 @@
 ---
-title: "Combinations"
+title: "Combinations"
 categories:
   - Killing Camp
 tags:
