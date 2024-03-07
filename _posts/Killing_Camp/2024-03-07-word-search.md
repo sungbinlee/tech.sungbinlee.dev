@@ -10,6 +10,7 @@ toc_sticky: true
 toc_label: "Word Search"
 toc_icon: "book"
 ---
+
 ## 문제 파악
 2차원 보드에서 단어를 찾는 문제이다. 보드에서 단어는 수직 또는 수평으로 인접한 문자들로 이루어져있어야 한다.
 
