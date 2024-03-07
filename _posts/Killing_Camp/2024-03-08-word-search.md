@@ -1,5 +1,5 @@
 ---
-title: "Word Search"
+title: "Word Search"
 categories:
   - Killing Camp
 tags:
