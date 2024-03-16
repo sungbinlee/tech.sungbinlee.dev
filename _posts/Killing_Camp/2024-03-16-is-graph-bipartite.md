@@ -6,6 +6,7 @@ tags:
   - Coding test
   - Python
   - LeetCode
+  - BFS
 toc: true
 toc_sticky: true
 toc_label: "Is Graph Bipartite?"
