@@ -1,7 +1,7 @@
 ---
 title: "Is Graph Bipartite?"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

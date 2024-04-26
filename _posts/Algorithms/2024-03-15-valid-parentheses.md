@@ -1,7 +1,7 @@
 ---
 title: "Valid Parentheses"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

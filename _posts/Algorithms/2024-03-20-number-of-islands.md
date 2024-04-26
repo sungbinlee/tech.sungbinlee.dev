@@ -1,7 +1,7 @@
 ---
 title: "Number of Islands"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

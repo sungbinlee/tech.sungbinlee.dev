@@ -1,7 +1,7 @@
 ---
 title: "Coin Change"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

@@ -1,7 +1,7 @@
 ---
 title: "Network Delay Time"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

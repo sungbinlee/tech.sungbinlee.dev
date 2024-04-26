@@ -1,7 +1,7 @@
 ---
 title: "Word Search"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

@@ -1,7 +1,7 @@
 ---
 title: "Palindrome Partitioning"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

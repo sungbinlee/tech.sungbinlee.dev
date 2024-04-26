@@ -1,9 +1,9 @@
 ---
-title: "Killing Camp"
+title: "Algorithms"
 layout: archive
-permalink: /killing-camp
+permalink: /algorithms
 ---
 
 
-{% assign posts = site.categories['Killing Camp'] %}
+{% assign posts = site.categories['Algorithms'] %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: "Shortest Path in Binary Matrix"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

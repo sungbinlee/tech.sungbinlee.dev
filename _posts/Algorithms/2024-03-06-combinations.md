@@ -1,7 +1,7 @@
 ---
 title: "Combinations"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

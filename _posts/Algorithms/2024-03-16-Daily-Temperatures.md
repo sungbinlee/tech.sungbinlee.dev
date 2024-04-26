@@ -1,7 +1,7 @@
 ---
 title: "Daily Temperatures"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

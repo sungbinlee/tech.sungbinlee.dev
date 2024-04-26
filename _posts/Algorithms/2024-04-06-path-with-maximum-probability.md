@@ -1,7 +1,7 @@
 ---
 title: "Path with Maximum Probability"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

@@ -1,7 +1,7 @@
 ---
 title: "Permutations"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

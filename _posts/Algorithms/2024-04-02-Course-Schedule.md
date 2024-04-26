@@ -1,7 +1,7 @@
 ---
 title: "Course Schedule"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - Python

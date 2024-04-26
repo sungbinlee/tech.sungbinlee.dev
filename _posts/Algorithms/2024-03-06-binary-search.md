@@ -1,7 +1,7 @@
 ---
 title: "Binary search"
 categories:
-  - Killing Camp
+  - Algorithms
 tags:
   - Coding test
   - LeetCode

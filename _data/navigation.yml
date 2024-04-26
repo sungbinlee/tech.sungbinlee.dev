@@ -39,9 +39,9 @@ sidebar-category:
       - title: "Artificial Intelligence"
         url: "/artificial-intelligence"
         category: "Artificial Intelligence"
-      - title: "Killing Camp"
-        url: "/killing-camp"
-        category: "Killing Camp"
+      - title: "Algorithms"
+        url: "/algorithms"
+        category: "Algorithms"
   - title: "👔 LIFE"
     children:
       - title: "Daily JAM"
