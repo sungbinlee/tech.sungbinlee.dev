@@ -7,11 +7,11 @@ tags:
   - Python
 toc: true
 toc_sticky: true
-toc_label: "파이썬을 이용한 클린코드를 위한 테스트 주도 개발"
+toc_label: "Chapter 1: 기능 테스트를 이용한 Django 설치"
 toc_icon: "book"
 ---
 
-# Chapter 1: 기능 테스트를 이용한 Django 설치
+Chapter 1: 기능 테스트를 이용한 Django 설치
 ## 테스팅 고트님께 복종하라! 테스트가 없으면 아무것도 하지마라!
 > 소프트웨어 개발에서 일반적으로 코드를 작성한 후에 테스트 케이스를 작성하는 방법이 흔히 사용되며, 코드를 작성한 후에 테스트를 통해 코드의 동작을 확인하고 문제를 해결한다.
 
