@@ -307,6 +307,7 @@ def home_page(request):
     pass
 ```
 - **테스트**
+  
 ```
 self.assertTrue(response.content.startswith(b'<html>'))
 AttributeError: 'NoneType' object has no attribute 'content'
@@ -314,6 +315,7 @@ AttributeError: 'NoneType' object has no attribute 'content'
 - **코드**
 
 아 리턴값이 없다! 그러면 HttpResponse로 응답해주자.
+
 ```python
 # lists/views.py
 from django.http import HttpResponse
@@ -341,6 +343,7 @@ def home_page(request):
 ```sh
 python manage.py test
 ```
+
 ```
 Creating test database for alias 'default'...
 System check identified no issues (0 silenced).
@@ -354,6 +357,7 @@ Destroying test database for alias 'default'...
 성공!
 ### 기능 테스트
 단위 테스트가 끝났으니 이제 사용자 관점에서의 기능 테스트를 실행 시켜보자!
+
 ```sh
 # 장고 서버가 실행 중 이여야 한다.
 $ python -m unittest functional_tests_with_unittest.py
