@@ -45,7 +45,7 @@ assert 'successfully' in browser.title
 python functional_test.py
 ```
 예상대로 실패한다.
-![img.png](img.png)
+![img.png](https://github.com/sungbinlee/tdd-with-python/raw/main/ch1/img.png)
 `selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED`
 
 해당 에러는 브라우저가 `http://localhost:8000/` 에접근을 못할때 발생하는 에러이다.
@@ -67,7 +67,7 @@ python functional_test.py
 커맨드 라인상 변화가 없다. 이 말은 `AssertionError`가 발생하지 않는다는 뜻으로 테스트를 통과 한 것이다!
 
 #### 구동페이지 확인
-![img_1.png](img_1.png)
+![img_1.png](https://github.com/sungbinlee/tdd-with-python/raw/main/ch1/img_1.png)
 
 ### 이번 장을 통해:
 - Testing Goat에 비유한 TDD의 핵심 개념을 이해할 수 있었다.
