@@ -138,7 +138,7 @@ FAILED (errors=1)
 - 우리가 가지고 있는 실패 테스트는?
   - `list.views` 에서 `home_page`를 임포트 할수 없다.
 ### [lists/views.py](superlists/lists/views.py)
-```py
+```python
 from django.shortcuts import render
 
 # Create your views here.
@@ -184,7 +184,7 @@ Destroying test database for alias 'default'...
 책에서의 Django는 1.7 기준으로 작성되어 있다. 필자는 4.2 버전으로 진행하는 만큼 최신버전에 맞게 코드를 수정을 했다.
 
 ### [superlists/urls.py](superlists/superlists/urls.py)
-```py
+```python
 from django.contrib import admin
 from django.urls import path, include
 from lists import views as home_views
