@@ -11,7 +11,6 @@ toc_label: "Chapter 3: 단위 테스트를 이용한 간단한 홈페이지 테�
 toc_icon: "book"
 ---
 Chapter 3: 단위 테스트를 이용한 간단한 홈페이지 테스트
-
 ## 첫 Django App과 첫 단위 테스트
 - Django는 코드를 앱(App) 형태로 구조화 하도록 도와준다.
 - 다른 프로젝트에서 앱을 재사용할 수 있다.
@@ -62,6 +61,7 @@ TDD 에서는 양쪽 테스트를 모두 적용한다.
 ## Django에서의 단위 테스트
 고의적인 실패 테스트를 만들어서 확인해 보자.
 ### [lists/tests.py](superlists/lists/tests.py)
+
 ```python
 from django.test import TestCase
 
@@ -105,6 +105,7 @@ Django 는 대체로 MVC 패턴을 따른다. Django 에서는 MTV(Model-Templat
 
 
 ### [lists/tests.py - 첫 번째 단위 테스트 작성](superlists/lists/tests.py)
+
 ```python
 from django.urls import resolve
 from django.test import TestCase
@@ -138,6 +139,7 @@ FAILED (errors=1)
 - 우리가 가지고 있는 실패 테스트는?
   - `list.views` 에서 `home_page`를 임포트 할수 없다.
 ### [lists/views.py](superlists/lists/views.py)
+
 ```python
 from django.shortcuts import render
 
