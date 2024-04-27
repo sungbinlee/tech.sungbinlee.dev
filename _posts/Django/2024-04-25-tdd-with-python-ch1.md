@@ -1,5 +1,5 @@
 ---
-title: "파이썬을 이용한 클린코드를 위한 테스트 주도 개발(TDD) - 챕터1"
+title: "[TDD]파이썬을 이용한 클린코드를 위한 테스트 주도 개발: 챕터1"
 categories:
   - Django
 tags:
