@@ -46,6 +46,7 @@ superlists
 ## 단위 테스트 vs 기능 테스트
 ### 기능 테스트(Functional Test)
 - 사용자 관점에서 애플리케이션 외부를 테스트를 하는 것
+
 ### 단위 테스트(Unit Test)
 - 프로그래머 관점에서 그 내부를 테스트 하는 것
 
@@ -70,7 +71,9 @@ class SmokeTest(TestCase):
     def test_bad_maths(self):
         self.assertEqual(1 + 1, 3)
 ```
+
 ### 실행해보자
+
 ```shell
 $ python manage.py test
 ```
@@ -99,6 +102,7 @@ Django 는 대체로 MVC 패턴을 따른다. Django 에서는 MTV(Model-Templat
 1. 특정 URL에 대한 HTTP `요청`을 받는다.
 2. 요청을 `URLconf` 을 통해 해석 하고 적절한 뷰를 매핑한다.
 3. 해당 뷰 기능이 요청을 처리해서 HTTP 응답을 반환한다.
+
 ### 우리가 테스트 해야할 것은?
 - URL의 루트("/")를 해석해서 특정 뷰 기능에 매칭시킬 수 있는가?
 - 이 뷰 기능이 특정 HTML을 반환하게 해서 기능 테스트를 통과할 수 있는가?
@@ -150,6 +154,7 @@ home_page = None
 저자에 따르면 TDD 실습의 시발점이자 모든것이라고 하니 계속 따라해보자.
 
 ### 실행해보자
+
 ```shell
 $ python manage.py test
 ```
@@ -244,10 +249,12 @@ Destroying test database for alias 'default'...
 와! 성공이다. 모든 코드 변경은 테스트에 의해 검증돼야 한다.
 
 이로써 첫 단위 테스트와 url 맵핑 그리고 임시 뷰까지 완료되었다.
+
 ## 뷰를 위한 단위 테스트
 - 이제 빈 함수에서 HTML 형식의 실제 응답을 반환하는 함수를 작성해야 한다.
 - 이제 우리가 해야할 일은..? **테스트를 먼저 작성하자.**
 ### [lists/views.py](superlists/lists/views.py)
+
 ```python
 # from django.core.urlresolvers import resolve # Django 2.0 에서 삭제
 from django.urls import resolve
