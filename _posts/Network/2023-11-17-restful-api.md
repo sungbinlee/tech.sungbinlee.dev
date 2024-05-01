@@ -34,7 +34,7 @@ RESTful API는 REST의 원칙을 따라 설계된 API를 지칭합니다. 이를
 
 #### DELETE
 의미와 전달 방법:
-- **DELETE**: 리소스를 삭제하기 위해 사용됩니다. DELETE 요청은 특정 리소스를 식별하는 URL을 통해 전달됩니다. `/article/delete/{id}` 와 같은 형식으로 사용됩니다.
+- **DELETE**: 리소스를 삭제하기 위해 사용됩니다. DELETE 요청은 특정 리소스를 식별하는 URL을 통해 전달됩니다. `/articles/{id}` 와 같은 형식으로 사용됩니다.
 
 #### PUT vs PATCH
 의미와 차이점:
