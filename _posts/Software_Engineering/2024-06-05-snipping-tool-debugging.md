@@ -21,12 +21,12 @@ toc_sticky: true
 
 ### [스택오버플로우 질문](https://stackoverflow.com/questions/78568755/pyside-snipping-tool-coordinates-mismatch-due-to-monitor-scaling-and-dual-monito)
 
-   스크린샷 도구의 해상도 문제를 해결하기 위해 스택오버플로우에 질문을 통해 다음과 같은 코멘트를 받았다:
-   ```
-   You should read the QScreen, QPaintDevice (from which QWidget inherits) and the DPI related documentation.
-   ```
+ 스크린샷 도구의 해상도 문제를 해결하기 위해 스택오버플로우에 질문을 통해 다음과 같은 코멘트를 받았다:
 
-   코멘트에 따라 관련 문서를 읽기 시작했다. 
+ > You should read the QScreen, QPaintDevice (from which QWidget inherits) and the DPI related documentation.
+ 
+
+ 코멘트에 따라 관련 문서를 읽기 시작했다. 
 
 ### [DPI(Dots Per Inch)](https://doc.qt.io/qt-6/highdpi.html) 이해하기
 
