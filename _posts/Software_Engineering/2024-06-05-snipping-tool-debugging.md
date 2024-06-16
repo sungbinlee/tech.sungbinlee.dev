@@ -1,5 +1,5 @@
 ---
-title: "스크린샷 도구(Snipping tool) 개발 과정에서의 문제 해결"
+title: "파이썬(PySide6) 스크린샷 도구(Snipping tool) 개발 과정에서의 문제 해결"
 categories:
   - Software Engineering
 tags:
@@ -7,6 +7,7 @@ tags:
   - Debugging
   - HiDPI
   - Display
+  - Python
 
 toc: true
 toc_sticky: true
