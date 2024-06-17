@@ -1,5 +1,5 @@
 ---
-title: "'"'연결을 거부했습니다'"' 오류 해결기: Django 서비스 접속 불가 디버깅 사례(Feat. Nginx)"
+title: "“연결을 거부했습니다” 오류 해결기: Django 서비스 접속 불가 디버깅 사례(Feat. Nginx)"
 categories:
   - Debugging
 tags:
