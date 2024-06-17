@@ -42,6 +42,8 @@ sidebar-category:
       - title: "Algorithms"
         url: "/algorithms"
         category: "Algorithms"
+      - title: "Debugging"
+        url: "/debugging"
   - title: "👔 LIFE"
     children:
       - title: "Daily JAM"
