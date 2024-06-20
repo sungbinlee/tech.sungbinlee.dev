@@ -5,7 +5,6 @@ categories:
 tags:
   - Book
   - CS
-  - Review
 toc: true
 toc_sticky: true
 toc_label: "1일 1로그 100일 완성 IT 지식"
