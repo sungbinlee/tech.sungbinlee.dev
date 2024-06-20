@@ -9,9 +9,9 @@ toc: true
 toc_sticky: true
 ---
 
-오늘 퇴근 후, PostgreSQL Meetup Seoul의 두 번째 밋업에 참석했다. 업무에서 PostgreSQL을 하드하게 사용하지는 않지만, 사내 시스템의 모든 DB가 PostgreSQL로 구성되어 있어 성능 이슈에 직면했을 때 어떻게 처리할 수 있을지 궁금해서 참여하게 되었다. 데이터 엔지니어가 아니지만, 필요한 부분만 얻어가려는 마음가짐으로 참석했다. 
+오늘 퇴근 후, PostgreSQL Meetup Seoul의 두 번째 밋업에 참석했다. 업무에서 PostgreSQL을 하드하게 사용하지는 않지만, 사내 시스템의 모든 DB가 PostgreSQL로 구성되어 있어 성능 이슈에 직면했을 때 어떻게 처리할 수 있을지 궁금해서 참여하게 되었다. 
 
-밋업에서는 저녁으로 샌드위치와 물을 제공해 줬다. 
+데이터 엔지니어가 아니지만, 필요한 부분만 얻어가려는 마음가짐으로 참석했다. 밋업에서는 저녁으로 샌드위치와 물을 제공해 줬다. 
 
 ![IMG_1303](https://github.com/sungbinlee/sungbinlee.github.io/assets/52542229/e6325985-b0fc-46e6-bb60-3965adb2fb1a)
 
