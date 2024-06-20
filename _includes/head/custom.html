@@ -7,3 +7,23 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
 <link rel="manifest" href="/assets/site.webmanifest">
+<style>
+    .sidebar {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        overflow-y: auto;
+        max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+    }
+
+    /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+    .sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .sidebar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+</style>
