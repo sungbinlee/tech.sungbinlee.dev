@@ -106,11 +106,11 @@ analytics:
 author:
   name             : "Sungbin Lee"
   avatar           : "https://avatars.githubusercontent.com/u/52542229?v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부하고 습득한것을 기록하자!"
+  bio              : "지식을 인덱싱하는 공간"
   location         : "Seoul, Korea"
   email            :
   links:
-    - label: "Email"
+    - label: "isungbin99@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:isungbin99@gmail.com"
     - label: "Github"
