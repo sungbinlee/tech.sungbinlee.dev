@@ -45,9 +45,3 @@ sidebar-category:
       - title: "Debugging"
         url: "/debugging"
         category: "Debugging"
-  - title: "👔 LIFE"
-    children:
-      - title: "Daily JAM"
-        url: "/jam"
-      - title: "잡담"
-        url:  "/life"
