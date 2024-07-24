@@ -1,3 +1,13 @@
+---
+title: "Django 초기 설정"
+categories:
+  - Django
+tags:
+  - Tutorial
+  - Python
+toc: true
+toc_sticky: true
+---
 ## 프로젝트 생성 및 초기 프로젝트 환경설정
 
 ### 가상환경 생성
