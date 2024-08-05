@@ -1,7 +1,18 @@
-# Autodesk DevCon X Seoul 후기
-
+---
+title: "Autodesk DevCon X Seoul 후기"
+categories:
+  - Review
+tags:
+  - Devcon
+  - PostgreSQL
+toc: true
+toc_sticky: true
+---
 ## 개요
 2024년 Autodesk DevCon X Seoul은 주로 건설 및 건축(Construction & Architecture) 분야에 중점을 두고 발표가 진행되었습니다. 이번 행사는 Autodesk Platform Service(APS)의 활용 사례와 혁신적인 API를 중심으로, 개발자 에코시스템의 성장을 도모하는 자리였습니다. 특히, 오토데스크의 발전 방향에 대한 논의가 있었으며, 기존에 툴을 부서에서 판매하던 방식을 넘어 이제는 플랫폼을 엔터프라이즈에 판매하는 전환 과정이 강조되었습니다.
+
+## 아젠다
+![image](https://github.com/user-attachments/assets/85d3dd93-0de9-4a2d-9e35-b54e69f0375b)
 
 ## 함께 성장하는 개발자 에코시스템
 Autodesk Platform Service(APS)는 고객의 요구와 소프트웨어의 불일치를 해결하기 위한 도구로, 오토데스크가 나아가고자 하는 방향과 개발자 생태계에 대한 논의가 있었습니다. 오토데스크는 2D에서 3D로, 이제는 3D에서 클라우드 및 데이터로 전환해왔습니다. 파트너사 및 고객사들이 APS에서 성공하는 것을 목표로 하고 있습니다.
