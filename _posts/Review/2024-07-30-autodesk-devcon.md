@@ -1,5 +1,5 @@
 ---
-title: "Autodesk DevCon X Seoul 후기"
+title: "Autodesk DevCon X Seoul(오토데스크 데브콘) 후기"
 categories:
   - Review
 tags:
