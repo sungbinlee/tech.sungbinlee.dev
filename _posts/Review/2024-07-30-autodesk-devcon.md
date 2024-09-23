@@ -11,8 +11,8 @@ toc_sticky: true
 ## 개요
 2024년 Autodesk DevCon X Seoul은 주로 건설 및 건축, 엔지니어링 및 건설(AEC) 분야에 중점을 두고 발표가 진행되었습니다. 이번 행사는 Autodesk Platform Service(APS)의 활용 사례와 혁신적인 API를 중심으로, 개발자 에코시스템의 성장을 도모하는 자리였습니다. 특히, 오토데스크의 발전 방향에 대한 논의가 있었으며, 기존에 툴을 부서에서 판매하던 방식을 넘어 이제는 플랫폼을 엔터프라이즈에 판매하는 전환 과정이 강조되었습니다.
 
-![IMG_1442](https://github.com/user-attachments/assets/f59189a9-c699-4d88-874c-574b7a413c9e)|![IMG_1440](https://github.com/user-attachments/assets/af8f06df-aea8-49d5-98ef-b189e7f0150e)
----|---|
+|![IMG_1442](https://github.com/user-attachments/assets/f59189a9-c699-4d88-874c-574b7a413c9e)|![IMG_1440](https://github.com/user-attachments/assets/af8f06df-aea8-49d5-98ef-b189e7f0150e)|
+|---|---|
 
 ## 아젠다
 ![image](https://github.com/user-attachments/assets/85d3dd93-0de9-4a2d-9e35-b54e69f0375b)
