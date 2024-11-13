@@ -1,5 +1,5 @@
 ---
-title: "FIDO 와 FIDO2.0 톺아보기"
+title: "FIDO1 와 FIDO2 차이점 알아보기"
 categories:
   - Security
 tags:
