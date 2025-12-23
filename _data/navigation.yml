@@ -18,7 +18,7 @@ main:
 sidebar-category:
   - title: "💻 Computer Science"
     children:
-      - title: "Journal"
+      - title: "Journey"
         url: "/journey"
         category: "Journey"
       - title: "Software Engineering"
