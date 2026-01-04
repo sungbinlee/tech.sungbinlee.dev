@@ -1,7 +1,7 @@
 ---
 title: "NginX + Keycloak으로 레거시 MSA에 보안 레이어 얹기"
 categories:
-  - Security
+  - Software Engineering
 tags:
   - Keycloak
   - OAuth2
@@ -10,7 +10,7 @@ tags:
   - Nginx
   - Lua
   - MSA
-  - network
+  - Security
 toc: true
 toc_sticky: true
 ---
