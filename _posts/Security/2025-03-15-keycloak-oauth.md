@@ -1,7 +1,7 @@
 ---
 title: "Keycloak + OAuth2 인증 흐름 살펴보기"
 categories:
-  - security
+  - Security
 tags:
   - Keycloak
   - OAuth2
@@ -67,7 +67,7 @@ Authorization Code Grant는 브라우저 리다이렉트 기반으로 동작하�
 - 매 요청마다 Authorization Server에 토큰 검증 요청을 보내는 방식(Introspection)  
 - 공개키(JWK)를 받아서 Resource Server 내부에서 토큰을 검증하는 방식(JWT 서명 검증)  
 
-두 번째 방식이 네트워크 부담도 적고, 실제 운영 환경에서는 더 많이 쓰인다. Spring Security나 Django 쪽에서도 이 구조를 쉽게 구성할 수 있다.
+두 번째 방식이 네트워크 부담도 적고, 실제 운영 환경에서는 더 많이 쓰이지 않나 싶다.
 
 ![token-validation](/assets/images/security/keycloak-validate-token.png)
 
