@@ -12,6 +12,10 @@ toc_icon: "book"
 
 좋은 파이썬 코드를 작성하는 125가지 방법
 
+![Effective Python 3rd](https://m.media-amazon.com/images/I/81eNxxP7MHL._SY522_.jpg)
+
+> [https://a.co/d/0cacRuDT](https://a.co/d/0cacRuDT)
+
 ## 1. Pythonic Thinking
 
 ### Item 1: 어떤 파이썬 버전을 쓰는지 알아라
