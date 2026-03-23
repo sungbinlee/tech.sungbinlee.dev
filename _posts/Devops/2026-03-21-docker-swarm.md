@@ -12,9 +12,9 @@ toc_sticky: true
 
 ## 도커 스웜 모드 클러스터 구축하기
 
-도커와 쿠버네티스를 책으로 학습하면서 내용을 정리하고 있다. 기존에는 도커를 컨테이너를 생성하고 배포하는 용도로만 사용했지만, 여러 서버를 묶어 확장성을 확보하는 구조를 이해하기 위해 스웜 모드를 먼저 구성해본다.
+도커와 쿠버네티스를 책으로 학습하면서 실제로 구성해보고 있다. 기존에는 도커를 컨테이너를 생성하고 배포하는 용도로만 사용했지만, 여러 서버를 묶어 확장성 (Scale Out)을 구성하고자 한다.
 
-도커 스웜은 여러 서버를 하나의 자원 풀로 묶어 클러스터를 구성하고, 컨테이너를 분산 실행해 스케일 아웃을 지원하는 기능이다. 쿠버네티스를 사용하기 전에 기본 개념을 이해하기 위해 스웜 모드를 먼저 실습한다.
+도커 스웜은 도커의 내장 오케스트레이션 기능으로 여러 서버를 하나의 자원 풀로 묶어 클러스터를 구성하고, 컨테이너를 분산 실행해 스케일 아웃을 지원하는 기능이다. 쿠버네티스를 사용하기 전에 기본 개념을 익히기 좋을 것 같다.
 
 ## 스웜 구조
 
@@ -24,8 +24,11 @@ toc_sticky: true
 
 스웜은 Raft 합의 알고리즘을 사용해 매니저 간 상태를 동기화한다. Leader가 상태 변경을 제안하고 과반수 매니저가 동의하면 반영된다. 따라서 매니저 노드는 보통 홀수 개로 구성한다.
 
+> https://raft.github.io/
+
 ## 실습 환경
-실습은 VM 3대로 구성, 진행하였다.
+실습은 VM 3대로 구성 후 진행하였다.
+
 ```shell
 docker-practice 192.168.0.14
 swarm-worker1 192.168.0.16
@@ -33,6 +36,8 @@ swarm-worker2 192.168.0.17
 ````
 
 ## 스웜 클러스터 생성
+
+매니저가 될 노드에서 `docker swarm init --advertise-addr <매니저 노드 ip>`로 스웜 클러스터를 생성한다.
 
 ```shell
 root@docker-practice:/home/sungbin# docker swarm init --advertise-addr 192.168.0.14
@@ -45,7 +50,7 @@ To add a worker to this swarm, run the following command:
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 ```
 
-각 워커 노드에서 join 명령어를 실행해 클러스터에 참여시킨다.
+클러스터가 생성되면 클러스터를 구성하기 위한 커맨드가 보여진다. 각 워커 노드에서 join 명령어를 실행해 클러스터에 참여시킨다.
 
 ```shell
 root@swarm-worker1:/home/sblee# docker swarm join --token SWMTKN-1-3b4bm4u6vn6e5pubd6ovau7yb6bt9qs54mj4bdhjqpzdyyxu0v-801uwui2lj03qa8jf2d80f6vp 192.168.0.14:2377
@@ -67,9 +72,7 @@ root@docker-practice:/home/sungbin#
 
 ## 스웜 서비스
 
-스웜은 컨테이너가 아닌 서비스 단위로 관리한다.
-
-서비스는 정의된 레플리카 수를 유지하며, 부족한 경우 자동으로 컨테이너를 생성한다. 특정 노드에 문제가 발생하면 다른 노드에 재배치된다.
+스웜은 컨테이너가 아닌 서비스 단위로 관리한다.  서비스는 정의된 레플리카 수를 유지하며, 부족한 경우 자동으로 컨테이너를 생성한다. 특정 노드에 문제가 발생하면 다른 노드에 재배치된다.
 
 또한 롤링 업데이트를 지원해 서비스 중단 없이 배포가 가능하다.
 
@@ -163,7 +166,7 @@ nn12t9nwbjaa: running
 verify: Service zyix7ik84y88k5ei4yus8lutf converged
 ```
 
-모든 노드에 하나씩 컨테이너가 생성된다.
+모든 노드에 하나씩 컨테이너가 생성된다. 해당 방식은 각 노드마다 모니터링과 같은 서비스를 배포할때 용이하다.
 
 ## 장애 복구
 
