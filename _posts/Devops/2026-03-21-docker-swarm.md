@@ -1,5 +1,5 @@
 ---
-title: "도커 스웜 모드로 클러스터 구축하기 (개념 + 실습)"
+title: "도커 스웜 모드로 클러스터 구축하기"
 categories:
   - DevOps
 tags:
